@@ -13,7 +13,7 @@ namespace rest_rpc {
 	namespace rpc_service {
 		class connection;
 
-		class router : asio::noncopyable {
+                class router : boost::asio::noncopyable {
 		public:
 			static router& get() {
 				static router instance;
